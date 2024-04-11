@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/포트폴리오(여행사 머리).css">
+    <script defer src="./js/포트폴리오(여행사,머리).js"></script>
+    <script defer src="./js/포트폴리오(여행사,몸통).js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <link rel="stylesheet" href="./css/포트폴리오(여행사, 몸통).css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    
+</head>
+<body>
+    <div id="wrap">
+        <div class="header contents_area">
+            <div class="hd_top">
+                <div class="logo">
+                    <a href="">로고</a>
+                </div>
+                <div class="search">
+                    <input type="text" placeholder="검색어를 입력해 주세요" class="search_bar">
+                    <img src="./img/google_search.png" alt="">
+                    <div class="search_box block"></div>
+                </div>
+                <div class="ranking">
+                    <div>인기검색어</div>
+                    <div id="result">
+                        
+                    </div>
+                    <div class="top_10 block">
+                        <ul>
+                            <li class="country">1  영국</li>
+                            <li class="country">2  일본</li>
+                            <li class="country">3  태국</li>
+                            <li class="country">4  미국</li>
+                            <li class="country">5  터키</li>
+                            <li class="country">6  아르헨티나</li>
+                            <li class="country">7  체코</li>
+                            <li class="country">8  프랑스</li>
+                            <li class="country">9  벨기에</li>
+                            <li class="country">10  콜롬비아</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="tp_menu">
+                    <ul>
+                        <li>
+                            <div><img src="" alt=""></div>
+                            <div>알림</div>
+                        </li>
+                        <li>
+                            <div><img src="./img/icon_coupon_26.svg" alt=""></div>
+                            <div>쿠폰</div>
+                        </li>
+                        <li>
+                            <div><img src="./img/icon_mypage_26.svg" alt=""></div>
+                            <div>로그인</div>
+                        </li>
+                        <li>
+                            <div><img src="./img/icon_reservation_26.svg" alt=""></div>
+                            <div>예약내역</div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="hd_bot"></div>
+        </div>
+        <div class="container">
+            <div class="banner">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="./img/travel/bnr_pc_sm (1).jpg">
+                            <div class="banner_btn">
+                                <a href="">
+                                    바로가기
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/travel/bnr_pc_sm (10).jpg" />
+                            <div class="banner_btn">
+                                <a href="">
+                                    바로가기
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/travel/bnr_pc_sm (11).jpg" />
+                                                        <div class="banner_btn">
+                                <a href="">
+                                    바로가기
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/travel/bnr_pc_sm (12).jpg" />
+                                                        <div class="banner_btn">
+                                <a href="">
+                                    바로가기
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/travel/bnr_pc_sm (13).jpg" />
+                                                        <div class="banner_btn">
+                                <a href="">
+                                    바로가기
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/travel/bnr_pc_sm (2).jpg" />
+                                                        <div class="banner_btn">
+                                <a href="">
+                                    바로가기
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/travel/bnr_pc_sm (3).jpg" />
+                                                        <div class="banner_btn">
+                                <a href="">
+                                    바로가기
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/travel/bnr_pc_sm (4).jpg"/>
+                                                           <div class="banner_btn">
+                                <a href="">
+                                    바로가기
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/travel/bnr_pc_sm (5).jpg" />
+                                                        <div class="banner_btn">
+                                <a href="">
+                                    바로가기
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    </div>
+                    
+                <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+                <script>
+                    var swiper = new Swiper(".mySwiper", {
+                        autoplay: {
+                    delay: 2500,
+                    disableOnInteraction: false,
+                    },
+                        effect: "coverflow",
+                        grabCursor: true,
+                        centeredSlides: true,
+                        slidesPerView: "auto",
+                        coverflowEffect: {
+                            rotate: 50,
+                            stretch: 0,
+                            depth: 100,
+                            modifier: 1,
+                            slideShadows: true,
+                        },
+
+                    loop: true,
+                        pagination: {
+                            el: ".swiper-pagination",
+                        },
+                    });
+                </script>
+            </div>
+            <div class="recomendation contents_area">
+                <h1>추천 상품</h1>
+                <div class="swiper mySwiper2">
+                    <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <a href="">
+                            <div class="rec_img">
+                                <img src="./img/travel/635276447225547105.png" alt="">
+                            </div>
+                            <div class="rec_text">
+                                <h4>해외여행</h4>
+                                <p>비싼 타이완 3박 4일</p>
+                                <h2>5000000000</h2>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="">
+                            <div class="rec_img">
+                                <img src="./img/travel/635700756757695110.png" alt="">
+                            </div>
+                            <div class="rec_text">
+                                <h4>해외여행</h4>
+                                <p>비싼 타이완 3박 4일</p>
+                                <h2>5000000000</h2>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="">
+                            <div class="rec_img">
+                                <img src="./img/travel/635896776226138058.png" alt="">
+                            </div>
+                            <div class="rec_text">
+                                <h4>해외여행</h4>
+                                <p>비싼 타이완 3박 4일</p>
+                                <h2>5000000000</h2>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="">
+                            <div class="rec_img">
+                                <img src="./img/travel/636076364324305992.png" alt="">
+                            </div>
+                            <div class="rec_text">
+                                <h4>해외여행</h4>
+                                <p>비싼 타이완 3박 4일</p>
+                                <h2>5000000000</h2>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="">
+                            <div class="rec_img">
+                                <img src="./img/travel/636354789332229072.png" alt="">
+                            </div>
+                            <div class="rec_text">
+                                <h4>해외여행</h4>
+                                <p>비싼 타이완 3박 4일</p>
+                                <h2>5000000000</h2>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="">
+                            <div class="rec_img">
+                                <img src="./img/travel/636380601096563803.png" alt="">
+                            </div>
+                            <div class="rec_text">
+                                <h4>해외여행</h4>
+                                <p>비싼 타이완 3박 4일</p>
+                                <h2>5000000000</h2>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="">
+                            <div class="rec_img">
+                                <img src="./img/travel/637890894355308271.png" alt="">
+                            </div>
+                            <div class="rec_text">
+                                <h4>해외여행</h4>
+                                <p>비싼 타이완 3박 4일</p>
+                                <h2>5000000000</h2>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="">
+                            <div class="rec_img">
+                                <img src="./img/travel/637914017720103292.png" alt="">
+                            </div>
+                            <div class="rec_text">
+                                <h4>해외여행</h4>
+                                <p>비싼 타이완 3박 4일</p>
+                                <h2>5000000000</h2>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="">
+                            <div class="rec_img">
+                                <img src="./img/travel/638219175706091866.png" alt="">
+                            </div>
+                            <div class="rec_text">
+                                <h4>해외여행</h4>
+                                <p>비싼 타이완 3박 4일</p>
+                                <h2>5000000000</h2>
+                            </div>
+                        </a>
+                    </div>
+                    </div>
+                    <!-- <div class="swiper-pagination"></div> -->
+                </div>
+                                <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+                                <script>
+                                    var swiper = new Swiper(".mySwiper2", {
+                                    slidesPerView: 1,
+                                    spaceBetween: 10,
+                                    // pagination: {
+                                    //     el: ".swiper-pagination",
+                                    //     clickable: true,
+                                    // },
+                                    breakpoints: {
+                                        640: {
+                                        slidesPerView: 1,
+                                        spaceBetween: 50,
+                                        },
+                                        768: {
+                                        slidesPerView: 2,
+                                        spaceBetween: 60,
+                                        },
+                                        1024: {
+                                        slidesPerView: 3,
+                                        spaceBetween: 70,
+                                        },
+                                    },
+                                    });
+                                </script>
+            </div>
+            <div class="trip_item contents_area">
+                <h3>어디로</h3>
+                <ul class="item_btn">
+                    <li class="item_btn_active">유럽/아프리카/아라비아</li>
+                    <li class="item_btn_active">동남아시아/대만/서남아</li>
+                    <li class="item_btn_active">일본</li>
+                    <li class="item_btn_active">중국/홍콩/마카오/몽골</li>
+                    <li class="item_btn_active">괌/사이판/호주/뉴질랜드</li>
+                    <li class="item_btn_active">미주/캐나다/하와이/중남미</li>
+                    <li class="item_btn_active">대한민국</li>
+                </ul>
+                <div class="item_list 0">
+                </div>
+                <div class="item_list 1">
+                </div>
+                <div class="item_list 2">
+                </div>
+                <div class="item_list 3">
+                </div>
+                <div class="item_list 4">
+                </div>
+                <div class="item_list 5">
+                </div>
+                <div class="item_list 6">
+                </div>
+                <div class="item_list 7">
+                </div>
+                <div class="item_list 8">
+                </div>
+            </div>
+        </div>
+        <div class="footer"></div>
+    </div>
+</body>
+</html>

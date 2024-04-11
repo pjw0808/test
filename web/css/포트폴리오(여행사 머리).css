@@ -1,0 +1,248 @@
+body{
+    margin: 0;
+
+}
+#wrap{
+    background-color: #fcfefd;
+}
+ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+a {
+    color: inherit;
+    text-decoration: none;
+}
+.contents_area {
+    width: 1200px;
+    margin: auto;
+}
+.block{display: none;}
+.header{
+    height: 220px;
+}
+.hd_top{
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: space-between;
+}
+.logo{
+    width: 150px;
+    height: 150px;
+    background: url(../img/travel/logo_2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    overflow: hidden;
+}
+.logo a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-indent: -9999px;
+}
+.search{
+    width: 400px;
+    height: 100px;;
+    line-height: 150px;
+    position: relative;
+}
+.search input{
+    width: 85%;
+    height: 40%;
+    margin-left: 1%;
+    border-radius: 30px;
+    padding: 0 20px;
+   border: none;
+    outline-color: green;
+}
+.search_box{
+    position: absolute;
+    width: 100%;
+    height: 500px;
+    top: 100%;
+    left: 0;
+    z-index: 999;
+    background: white;
+
+}
+.search img{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 74%;
+    transform: translateY(-50%);
+    right: 7%;
+}
+.ranking{
+    width: 250px;
+    height: 100px;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    line-height: 100px;
+    position: relative;
+    /* font-size: px; */
+
+
+}
+.ranking div{
+    height: 50px;
+}
+.ranking div:nth-child(1){
+    color: gray;
+}
+
+.ranking div:nth-child(2){
+    width: 60%;
+    padding:0 5px;
+    
+    
+}
+.ranking div:nth-child(2) img{
+    width: 20px;
+    height: 20px;
+
+}
+.top_10{
+    position: absolute;
+    top: 115px;
+    left: 0;
+    z-index: 999;
+    /* background: white; */
+}
+.top_10 ul{
+    width: 230px;
+    height:500px;
+    padding: 10px 10px;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.3);
+    background: white;
+}
+.tp_menu{
+    width: 250px;
+    height: 100px;
+    margin-top: 30px;
+}
+.tp_menu ul{
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+.tp_menu ul li{
+    width: calc(100%/4);
+    text-align: center;
+    font-size: 11px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.hd_bot{
+    height: 70px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.hd_bot>div{
+    width: 250px;
+    height: 70px;
+    overflow: hidden;
+
+}
+.bot_txt{
+    width: 100%;
+    height: 100%;
+    line-height: 70px;
+    text-align: center;
+
+}
+.bot_item:nth-child(1) .bot_txt{
+    background: url(../img/travel/icon_one.svg);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.bot_item:nth-child(2) .bot_txt{
+    background: url(../img/travel/domestic-allow-3.svg);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.bot_item:nth-child(3) .bot_txt{
+    background: url(../img/travel/plane-allow-3.svg);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.bot_item:nth-child(4) .bot_txt{
+    background: url(../img/travel/hotel-allow-3.svg);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.bot_item:hover .bot_txt {
+    transform: scale(1.2);
+    transition: 1s;
+}
+.footer{
+    width: 100%;
+    height: 300px;
+    background: pink;
+}
+/* .search_box{
+    width: 350px;
+    height: 500px;
+    border: 1px solid;
+    padding: 20px;
+} */
+
+.search_box div{
+    width: 100%;
+
+}
+.search_box_item{
+    overflow: hidden;
+    height: 500px;
+}
+.open{height: 500px !important;
+        transition: 1s;}
+.where_title{
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+}
+#where>ul {
+    display: flex;
+    height: 100%;
+    overflow: scroll;
+    gap: 20px;
+}
+#where>ul>li{
+    width: calc(100%/2);
+    height: 450px;
+}
+.where_we_go li ul {
+    height: 100%;
+}
+
+.continent{
+    height: 50px;
+    width: 100%;
+    border: 1px solid;
+    line-height: 50px;
+    margin: 10px 0;
+    border-radius: 20px;
+
+}
+.land{
+    height: 100%;
+}
+.land ul {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+}
+.land ul li{
+    height: 75px;
+    line-height: 75px;
+}

@@ -1,0 +1,57 @@
+.now_watching{
+    display: flex;
+    margin-top: 50px;
+    border: 1px solid;
+    height: 500px;
+    justify-content: space-between;
+    gap: 30px;
+
+}
+.img_box{
+    height: 80%;
+    width: 60%;
+    border-radius: 30px;
+    overflow: hidden;   
+}
+.desc_box{
+    width: 40%;
+    height: 80%;
+    padding: 50px 0;
+    box-sizing: border-box;
+    position: relative;
+}
+.nav{
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    width: 120px;
+    justify-content: space-between;
+
+}
+.nav_item{
+    width: 30px;
+    height: 30px;
+}
+.pruduct_num{
+    display: flex;
+    width: 300px;
+    justify-content: space-between;
+}
+.pruduct_num ul{
+    display: flex;
+    gap: 5px;
+    font-size: 15px;
+}
+.desc_box div{
+    margin: 20px 0;
+}
+.title{
+    font-size: 25px;
+    font-weight: 900;
+}
+
+.icon_group{
+    display: flex;
+    justify-content: space-around;
+}

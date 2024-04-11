@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/포트폴리오(여행사 머리).css">
+    <link rel="stylesheet" href="./css/포트폴리오(여행사,목록).css">
+    <script defer src="./js/포트폴리오(여행사,머리).js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <!-- <script src="./js/trave_list.js"></script> -->
+    <script src="./js/랜덤.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbit&family=Stylish&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+<div id="wrap">
+    <div class="header contents_area">
+        <div class="hd_top">
+            <div class="logo">
+                <a href="file:///C:/Users/user1/Desktop/web/%ED%8F%AC%ED%8A%B8%ED%8F%B4%EB%A6%AC%EC%98%A4(%EC%97%AC%ED%96%89%EC%82%AC).html">로고</a>
+            </div>
+            <div class="search">
+                <input type="text" placeholder="검색어를 입력해 주세요" class="search_bar">
+                <img src="./img/google_search.png" alt="">
+                <div class="search_box block">
+                    <div class="result">
+                        <div class="search_box_item" id="where">
+                            <div class="where_title">어디가</div>
+                            <ul class="where_we_go">
+                                <li>
+                                    <ul>
+                                        <li class="continent">유럽/아프리카/아라비아</li>
+                                        <li class="continent">동남아시아/대만/서남아</li>
+                                        <li class="continent">일본</li>
+                                        <li class="continent">중국/홍콩/마카오/몽골</li>
+                                        <li class="continent">괌/사이판/호주/뉴질랜드</li>
+                                        <li class="continent">미주/캐나다/하와이/중남미</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <div class="land block">
+                                        <ul class>
+                                            <li>서유럽</li>
+                                            <li>동유럽</li>
+                                            <li>발칸</li>
+                                            <li>스페인/포르투갈</li>
+                                            <li>튀르키예</li>
+                                            <li>이집트</li>
+                                            <li>그리스</li>
+                                            <li>중동</li>
+                                            <li>북유럽</li>
+                                            <li>아프리카/모리셔스</li>
+                                            <li>코카서스 3국</li>
+                                            <li>성지순례</li>
+                                        </ul>
+                                    </div>
+                                    <div class="land block">
+                                        <ul>
+                                            <li>브루나이</li>
+                                            <li>대만</li>
+                                            <li>싱가포르</li>
+                                            <li>라오스</li>
+                                            <li>캄보디아</li>
+                                            <li>인도네시아</li>
+                                            <li>인도/네팔</li>
+                                            <li>몰디브</li>
+                                        </ul>
+                                    </div>
+                                    <div class="land block">
+                                        <ul>
+                                            <li>큐슈</li>
+                                            <li>북해도</li>
+                                            <li>알펜루트</li>
+                                            <li>오키나와</li>
+                                            <li>시코쿠/주고쿠</li>
+                                            <li>도호쿠</li>
+                                            <li>일본(선박)</li>
+                                            <li>성지순례</li>
+                                        </ul>
+                                    </div>
+                                    <div class="land block">
+                                        <ul>
+                                            <li>중국</li>
+                                            <li>홍콩</li>
+                                            <li>마카오  </li>
+                                            <li>몽골/내몽고/중앙아시아</li>
+                                            <li>트레킹</li>
+                                            <li>문화/역사기행</li>
+                                        </ul>
+                                    </div>
+                                    <div class="land block">
+                                        <ul>
+                                            <li>괌</li>
+                                            <li>사이판</li>
+                                            <li>호주</li>
+                                            <li>뉴질랜드</li>
+                                            <li>팔라우</li>
+                                            <li>피지</li>
+                                        </ul>
+                                    </div>
+                                    <div class="land block">
+                                        <ul>
+                                            <li>하와이</li>
+                                            <li>미서부</li>
+                                            <li>미동부</li>
+                                            <li>캐나다</li>
+                                            <li>중남미/멕시코</li>
+                                            <li>알래스카</li>
+                                        </ul>
+                                    </div>
+                                        <div class="land block">
+                                            <ul>
+                                                <li>서울</li>
+                                                <li>경기</li>
+                                                <li>충북</li>
+                                                <li>충남</li>
+                                                <li>강원도</li>
+                                                <li>경북</li>
+                                                <li>경남</li>
+                                                <li>전북</li>
+                                                <li>전남</li>
+                                                <li>부산</li>
+                                                <li>제주도</li>
+                                            </ul>
+                                    </div>  
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="ranking">
+                <div>인기검색어</div>
+                <div id="result">
+                    
+                </div>
+                <div class="top_10 block">
+                    <ul>
+                        <li class="country">1  영국</li>
+                        <li class="country">2  일본</li>
+                        <li class="country">3  태국</li>
+                        <li class="country">4  미국</li>
+                        <li class="country">5  터키</li>
+                        <li class="country">6  아르헨티나</li>
+                        <li class="country">7  체코</li>
+                        <li class="country">8  프랑스</li>
+                        <li class="country">9  벨기에</li>
+                        <li class="country">10  콜롬비아</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="tp_menu">
+                <ul>
+                    <li>
+                        <div><img src="" alt=""></div>
+                        <div>알림</div>
+                    </li>
+                    <li>
+                        <div><img src="./img/icon_coupon_26.svg" alt=""></div>
+                        <div>쿠폰</div>
+                    </li>
+                    <li>
+                        <div><img src="./img/icon_mypage_26.svg" alt=""></div>
+                        <div>로그인</div>
+                    </li>
+                    <li>
+                        <div><img src="./img/icon_reservation_26.svg" alt=""></div>
+                        <div>예약내역</div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="hd_bot">
+            <div>
+                <img src="./img/travel/icon_menu_22.svg" alt="" style="width: 50px; height: 50px;     margin-top: 10px;     margin-left: 50px;">
+            </div>
+            <div class="bot_item">
+                <div class="bot_txt">해외여행</div>
+            </div>
+            <div class="bot_item">
+                <div class="bot_txt">
+                    국내여행
+                </div>
+            </div>
+            <div class="bot_item">
+                <div class="bot_txt">
+                    항공
+                </div>
+            </div>
+            <div class="bot_item">
+                <div class="bot_txt">
+                    호텔
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container contents_area">
+        <ul class="list_menu" >
+            <li class="list_item">일본</li>
+            <li class="list_item">동남아시아/대만/서남아</li>
+            <li class="list_item">유럽/아프리카/아라비아</li>
+            <li class="list_item">중국/홍콩/마카오/몽골</li>
+            <li class="list_item">괌/사이판/호주/뉴질랜드</li>
+            <li class="list_item">미주/캐나다/하와이/중남미</li>
+        </ul>
+        <div class="tour">
+            <div class="recomendation">
+                <h1>추천 여행지</h1>
+            </div>
+            <div class="tour_item">
+                <div class="tour_list 0 pre">
+                    <h1>일본</h1>
+                    <img src="./img/travel/edit2.png" alt="" class="icon">
+                </div>
+                <div class="tour_list 1 pre">
+                    <h1>동남아</h1>
+                </div>
+                <div class="tour_list 2  pre">
+                    <h1>유럽/아프리카/중동</h1>
+                </div>
+                <div class="tour_list 3  pre">
+                    <h1>중국/몽골</h1>
+                </div>
+                <div class="tour_list 4  pre">
+                    <h1>괌/오세아니아</h1>
+                </div>
+                <div class="tour_list 5  pre">
+                    <h1>아메리카</h1>
+                </div>
+            </div>
+            </div>
+        
+    </div>
+    
+    <div class="footer"></div>
+</div>
+</body>
+</html>
